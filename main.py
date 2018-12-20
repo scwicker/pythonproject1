@@ -4,7 +4,7 @@
 
 
 
-#print introduce user to the program 
+#introduce user to the program 
 
 print ("This program will take two integers between 0-999 and display their product")
 
@@ -13,15 +13,13 @@ print ("This program will take two integers between 0-999 and display their prod
 playagain = True
 while playagain:
 
-#invalid input - display invalid input message and jump to prompt user for input. 
+#invalid input - display invalid input message and reprompt user for input. 
 	def inputValidation(usernum):
 		if (usernum < 0 or usernum > 999):
 			return False
 		else:
 		
 			return True
-
-	
 
 
 
@@ -58,15 +56,6 @@ while playagain:
 	validinputs = 0
 	
 
-
-
-
-#exit while loop with our two valid nums
-
-
-#create variable numsProduct
-
-
 #calculate product
 
 	product = num1 * num2
@@ -98,17 +87,3 @@ while playagain:
 		#	again()
 
 	again()
-
-
-
-
-			
-	
-
-
-
-
-
-
-#input validation function
-#could probably make this a boolean function
