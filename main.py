@@ -81,21 +81,23 @@ while playagain:
 
 #if y, play again.  If q, quit program.
 
-	def again(playagain):
+	def again():
 
 		userchoice = input("Would you like to play again or quit? y = yes, q = quit: ")
 	
 		if (userchoice == "y" or userchoice == "Y" or userchoice == "yes"):
+			global playagain
 			playagain = True
 
 		elif (userchoice == "q" or userchoice == "Q" or userchoice == "no" or userchoice == "No"):
+		
 			playagain = False
 
 		else:
 			print ("please make a valid selection")
 		#	again()
 
-	again(playagain)
+	again()
 
 
 
